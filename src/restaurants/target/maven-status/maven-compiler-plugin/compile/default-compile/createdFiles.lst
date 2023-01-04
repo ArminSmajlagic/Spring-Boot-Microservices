@@ -1,0 +1,5 @@
+com\microservices\restaurants\RestaurantsApplication.class
+com\microservices\restaurants\Repositories\RestoRepository.class
+com\microservices\restaurants\Controllers\RestaurantsController.class
+com\microservices\restaurants\Services\RestoService.class
+com\microservices\restaurants\Models\Restaurant.class

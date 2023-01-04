@@ -1,0 +1,84 @@
+version: "3.8"
+
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@aspnetrun.com
+      - PGADMIN_DEFAULT_PASSWORD=Qwertz123
+    restart: unless-stopped
+    ports:
+      - 5050:80
+    volumes:
+      - pgadmindata:/root/.pgadmin
+    networks:
+      - javanet
+
+  customerdb:
+    image: postgres
+    container_name: customerdb
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=Qwertz123
+      - POSTGRES_DB=customer
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    volumes:
+      - postgresdata:/var/lib/postgresql/data/
+    networks:
+      - javanet
+
+  orderdb:
+    image: postgres
+    container_name: orderdb
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=Qwertz123
+      - POSTGRES_DB=orderdb
+    ports:
+      - 5433:5433
+    command: -p 5433
+    volumes:
+      - postgresdata_orders:/var/lib/postgresql/data/
+    networks:
+      - javanet
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - 9411:9411
+
+  restaurantsdb:
+    image: mongo
+    container_name: restaurantsdb
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - javanet
+
+  productsdb:
+    image: redis:alpine
+    restart: unless-stopped
+    container_name: productsdb
+    ports:
+      - 6379:6379
+    networks:
+      - javanet
+
+
+volumes:
+  mongodata:
+  postgresdata:
+  pgadmindata:
+  postgresdata_orders:
+
+networks:
+  javanet:
+    driver: bridge

@@ -1,0 +1,3 @@
+com\microservices\delivery\DeliveryApplication.class
+com\microservices\delivery\Controllers\DeliveryController.class
+com\microservices\delivery\Models\Delivery.class

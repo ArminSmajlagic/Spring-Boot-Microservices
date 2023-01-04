@@ -1,0 +1,5 @@
+com\microservices\orders\Models\Item.class
+com\microservices\orders\Models\ProductOrder.class
+com\microservices\orders\Controllers\OrdersController.class
+com\microservices\orders\OrdersApplication.class
+com\microservices\orders\Services\OrdersService.class
