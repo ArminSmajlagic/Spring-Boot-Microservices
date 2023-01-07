@@ -1,12 +1,13 @@
-
 package com.microservices.products.Services;
 
 import com.microservices.products.DAOs.ProductDaoImpl;
 import com.microservices.products.Models.Product;
+import com.microservices.products.Requests.CheckoutOrderRequest;
 import com.microservices.products.Requests.CreateProductRequest;
 import com.microservices.products.Requests.PatchProductRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,12 +17,12 @@ import java.util.List;
 public class ProductService implements IProductService{
 
     @Autowired
+    private KafkaTemplate<String,String> kafkaTemplate;
+    @Autowired
     private ProductDaoImpl productDao;
 
     public List<Product> GetProducts(){
         var result = productDao.GetAll();
-
-        log.info("Product service -> getting all products");
 
         return  result;
     }
@@ -30,16 +31,12 @@ public class ProductService implements IProductService{
     public Product GetProductById(Integer id) {
         var result = productDao.GetById(id);
 
-        log.info("Product service -> getting product by id");
-
         return  result;
     }
 
     @Override
     public int DeleteProduct(Integer id) {
         var result = productDao.Delete(id);
-
-        log.info("Product service -> getting all products");
 
         return  result;
     }
@@ -57,8 +54,6 @@ public class ProductService implements IProductService{
 
       var result = productDao.Save(product);
 
-      log.info("Product service -> Product created");
-
       return result;
     }
 
@@ -75,9 +70,13 @@ public class ProductService implements IProductService{
 
         var result = productDao.Patch(product);
 
-        log.info("Product service -> Product patched");
-
         return result;
+    }
+
+    @Override
+    public List<Product> CheckoutOrder(CheckoutOrderRequest request){
+        //kafkaTemplate.send("orderTopic", "Hello from user : "+request.getUser_id()+" length of product list is ->"+request.getProducts().size());
+        return request.getProducts();
     }
 }
 

@@ -58,7 +58,11 @@
             <artifactId>jedis</artifactId>
             <version>4.4.0-m1</version>
         </dependency>
-
+        <!--Apache Kafka-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

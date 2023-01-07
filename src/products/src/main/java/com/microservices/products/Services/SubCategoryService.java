@@ -3,9 +3,11 @@ package com.microservices.products.Services;
 import com.microservices.products.Models.Category;
 import com.microservices.products.Requests.CreateSubCategoryRequest;
 import com.microservices.products.Requests.PatchSubCategoryRequest;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SubCategoryService implements ISubCategoryService{
     @Override
     public List<Category> GetSubCategories() {

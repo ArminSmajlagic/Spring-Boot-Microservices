@@ -1,8 +1,0 @@
-com\microservices\customer\Models\Customer.class
-com\microservices\customer\Requests\CreateCustomerRequest.class
-com\microservices\customer\Services\CustomerService.class
-com\microservices\customer\Requests\PatchCustomerRequest.class
-com\microservices\customer\CustomerApplication.class
-com\microservices\customer\Models\Customer$CustomerBuilder.class
-com\microservices\customer\Repositories\ICustomerRepository.class
-com\microservices\customer\Controllers\CustomerController.class

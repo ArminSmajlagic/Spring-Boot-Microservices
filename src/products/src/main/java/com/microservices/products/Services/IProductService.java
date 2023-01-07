@@ -1,6 +1,7 @@
 package com.microservices.products.Services;
 
 import com.microservices.products.Models.Product;
+import com.microservices.products.Requests.CheckoutOrderRequest;
 import com.microservices.products.Requests.CreateProductRequest;
 import com.microservices.products.Requests.PatchProductRequest;
 
@@ -11,5 +12,6 @@ public interface IProductService {
     Product GetProductById(Integer id);
     int DeleteProduct(Integer id);
     Product CreateProduct(CreateProductRequest request);
+    List<Product> CheckoutOrder(CheckoutOrderRequest request);
     Product PatchProduct(PatchProductRequest request);
 }

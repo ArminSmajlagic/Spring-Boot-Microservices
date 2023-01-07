@@ -1,7 +1,0 @@
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\Controllers\CustomerController.java
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\CustomerApplication.java
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\Requests\CreateCustomerRequest.java
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\Requests\PatchCustomerRequest.java
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\Models\Customer.java
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\Services\CustomerService.java
-C:\Users\pc\Desktop\Spring-Boot-Microservices\src\customer\src\main\java\com\microservices\customer\Repositories\ICustomerRepository.java

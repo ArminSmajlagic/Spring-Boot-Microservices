@@ -1,8 +1,11 @@
 server:
   port: 8090
 
+environment: General Environment
 
 spring:
+  profiles:
+    active: dev
   application:
     name: gateway
   cloud:

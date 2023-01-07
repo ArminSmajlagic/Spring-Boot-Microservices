@@ -14,17 +14,23 @@
 
 - Spring Boot
 - Microservice architecture
-- OOP & AOP concepts
-- DAO & Repository patterns
-- ELK Stack
-- Grafana dashboard
-- JWT Authentication & Authorization
+- Swagger UI with OpenAPI
+- Spring Cloud Gateway 
+- Configuration Server with GitHub
+- Eureka Service Discovery
 - JPA with Hibernate & JDBC with Flyway migration
+- Grafana & Prometheus dashboard
 - PostgreSQL + Redis + MongoDB
 - Distributed tracing using Micrometer & Zipkin
-- Spring Cloud Gateway & Configuration Server with GitHub
-- Eureka Service Discovery
-- Docker & Kubernetes
+- System monitoring via Actuators
+- Aspects for logging and tracing
+- Dockerization of databases, services, servers, dashboards and more
+- Container orchestration with Kubernetes
+- Apache Kafka
+
+- JWT Authentication & Authorization (coming soon!)
+- ELK Stack (coming soon!)
+- Jenkins CI/CD (coming soon!)
 
 
 

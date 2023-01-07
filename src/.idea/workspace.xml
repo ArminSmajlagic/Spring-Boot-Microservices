@@ -5,14 +5,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e664ad3a-a46f-473e-88b0-f7b52a502eef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityServer4/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery/src/main/java/com/microservices/delivery/Repositories/DeliveryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery/src/main/java/com/microservices/delivery/Services/DeliveryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery/src/main/java/com/microservices/delivery/aspects/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery/src/main/java/com/microservices/delivery/aspects/TracingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delivery/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/microservices/orders/Configurations/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/microservices/orders/aspects/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/microservices/orders/aspects/TracingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Requests/CheckoutOrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/configurations/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/configurations/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurants/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurants/src/main/java/com/microservices/restaurants/aspects/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurants/src/main/java/com/microservices/restaurants/aspects/TracingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurants/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurants/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Configuration/OpenAPIConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Configuration/SecConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Filters/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Repositories/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Requests/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Requests/PatchUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Services/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/aspects/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/aspects/TracingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/main/resources/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/Controllers/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/Models/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/Repositories/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/Requests/CreateCustomerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/Requests/PatchCustomerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/microservices/customer/Services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/java/com/microservices/user/Services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orders/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/target/classes/db/migration/V1__InitTables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/products/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Controllers/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Controllers/SubCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Controllers/SubCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/DAOs/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/DAOs/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/SubCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/microservices/products/Services/SubCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/products/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurants/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurants/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +136,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -53,7 +167,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Desktop/Spring-Boot-Microservices/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Desktop/Spring-Boot-Microservices/src/delivery/src/main/java/com/microservices/delivery&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -61,12 +175,19 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.microservices.customer.Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pc\Desktop\src\restaurants\src\main\resources" />
-      <recent name="C:\Users\pc\Desktop\src\products\src\main\resources" />
-      <recent name="C:\Users\pc\Desktop\src\orders\src\main\resources" />
-      <recent name="C:\Users\pc\Desktop\src\gateway\src\main\resources" />
-      <recent name="C:\Users\pc\Desktop\src\discovery\src\main\resources" />
+      <recent name="C:\Users\pc\Desktop\Spring-Boot-Microservices\src\delivery\src\main\java\com\microservices\delivery" />
+      <recent name="C:\Users\pc\Desktop\Spring-Boot-Microservices\src\orders\src\main\java\com\microservices\orders" />
+      <recent name="C:\Users\pc\Desktop\Spring-Boot-Microservices\src\products\src\main\java\com\microservices\products" />
+      <recent name="C:\Users\pc\Desktop\Spring-Boot-Microservices\src\restaurants\src\main\java\com\microservices\restaurants" />
+      <recent name="C:\Users\pc\Desktop\Spring-Boot-Microservices\src\delivery\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.microservices.products.configurations" />
+      <recent name="com.microservices.orders.Configurations" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,26 +197,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OrdersApplication">
+  <component name="RunManager" selected="Application.ProductsApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.microservices.configServer.ConfigServerApplication" />
       <module name="config-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.microservices.configServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservices.customer.CustomerApplication" />
-      <module name="customer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.microservices.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,6 +289,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.microservices.user.UserApplication" />
+      <module name="users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Total" type="CompoundRunConfigurationType">
       <toRun name="CustomerApplication" type="Application" />
       <toRun name="DeliveryApplication" type="Application" />
@@ -190,19 +311,6 @@
       <toRun name="ProductsApplication" type="Application" />
       <toRun name="RestaurantsApplication" type="Application" />
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="src" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="src [deploy]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -257,7 +365,7 @@
       <item itemvalue="Application.RestaurantsApplication" />
       <item itemvalue="Application.EurekaApplication" />
       <item itemvalue="Application.DeliveryApplication" />
-      <item itemvalue="Application.CustomerApplication" />
+      <item itemvalue="Application.UserApplication" />
       <item itemvalue="Application.ConfigServerApplication" />
       <item itemvalue="Compound.Total" />
       <item itemvalue="Docker.docker-compose.yaml.pgdb: Compose Deployment" />
@@ -265,6 +373,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserApplication" />
         <item itemvalue="Docker.docker-compose.yaml.pgdb: Compose Deployment" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
@@ -280,5 +389,16 @@
       <updated>1672506664425</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/users/src/main/java/com/microservices/user/UserApplication.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
