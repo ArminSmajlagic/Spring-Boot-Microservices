@@ -4,7 +4,9 @@ package com.microservices.products.Controllers;
 import com.microservices.products.Models.Product;
 import com.microservices.products.Requests.CheckoutOrderRequest;
 import com.microservices.products.Requests.CreateProductRequest;
+import com.microservices.products.Requests.FindProductRequest;
 import com.microservices.products.Requests.PatchProductRequest;
+import com.microservices.products.Services.IProductService;
 import com.microservices.products.Services.ProductService;
 import jakarta.ws.rs.QueryParam;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +23,7 @@ import java.util.List;
 @RequestMapping("product")
 public class ProductsController {
     @Autowired
-    private ProductService service;
+    private IProductService service;
 
     @GetMapping
     public ResponseEntity<Object> GetProducts(){
@@ -31,13 +33,13 @@ public class ProductsController {
         return ResponseEntity.ok(result);
     }
 
-    @GetMapping("/getById")
-    public ResponseEntity<Object> GetById(@QueryParam("id") Integer id){
+    @PostMapping("/findProduct")
+    public ResponseEntity<Object> FindProduct(@RequestBody FindProductRequest request){
 
-        if(id == 0 || id == null)
-            return new ResponseEntity ("You have to pass a valid id", HttpStatus.BAD_REQUEST);
+        if(request == null)
+            return new ResponseEntity ("You have to pass a valid request", HttpStatus.BAD_REQUEST);
 
-        var result = service.GetProductById(id);
+        var result = service.FindProduct(request);
 
         if(result==null)
             return new ResponseEntity ("Product with the given id was not found", HttpStatus.NOT_FOUND);

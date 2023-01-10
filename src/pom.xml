@@ -75,12 +75,19 @@
             <groupId>io.zipkin.reporter2</groupId>
             <artifactId>zipkin-sender-urlconnection</artifactId>
         </dependency>
+        <dependency>
+            <groupId>net.ttddyy.observation</groupId>
+            <artifactId>datasource-micrometer-spring-boot</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!--Actuator-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>3.0.1</version>
         </dependency>
+        <!--Micrometer-->
+
         <!--security-->
  <!--       <dependency>
             <groupId>org.springframework.boot</groupId>

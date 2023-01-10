@@ -1,29 +1,13 @@
-server:
-  port: 8080
-
 environment: dev
 
 spring:
-  jpa:
-    database: POSTGRESQL
-    show-sql: true
-    hibernate:
-      ddl-auto: create-drop
+  zipkin:
+    baseUrl : http://localhost:9411/zipkin/
   datasource:
     platform: postgres
-    url: jdbc:postgresql://localhost:5432/userdb
+    url: jdbc:postgresql://localhost:5433/orderdb
     username: admin
     password: Qwertz123
     driverClassName: org.postgresql.Driver
-  application:
-    name: user
-  cloud:
-    bootstrap:
-      enabled: true
-
-management:
-  endpoints:
-    enabled: true
-    web.exposure.include: beans, loggers, mappings, health, metrics, caches, configprops, sessions
 
 jwt.secretKey: "zlN93cNdQE8hYzSEhLmvl4mGfqcy3wQG2VMHFWpxIx+o2WPkbLkNc5T3xilDSvhC"

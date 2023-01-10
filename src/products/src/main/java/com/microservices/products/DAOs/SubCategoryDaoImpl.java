@@ -3,13 +3,17 @@ package com.microservices.products.DAOs;
 import com.microservices.products.Models.Product;
 import com.microservices.products.Models.SubCategory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class SubCategoryDaoImpl implements SubCategoryDao{
 
-    private static final String HASH_KEY = "SubCategory";
+    @Value("${redis.hashName.subcategories}")
+    private String HASH_KEY;
     @Autowired
     private RedisTemplate<String, Object> template;
     @Override

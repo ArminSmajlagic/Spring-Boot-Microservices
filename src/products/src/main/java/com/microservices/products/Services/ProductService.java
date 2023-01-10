@@ -1,9 +1,11 @@
 package com.microservices.products.Services;
 
+import com.microservices.products.DAOs.ProductDao;
 import com.microservices.products.DAOs.ProductDaoImpl;
 import com.microservices.products.Models.Product;
 import com.microservices.products.Requests.CheckoutOrderRequest;
 import com.microservices.products.Requests.CreateProductRequest;
+import com.microservices.products.Requests.FindProductRequest;
 import com.microservices.products.Requests.PatchProductRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +14,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Slf4j
 @Service
 public class ProductService implements IProductService{
-
     @Autowired
     private KafkaTemplate<String,String> kafkaTemplate;
     @Autowired
-    private ProductDaoImpl productDao;
+    private ProductDao productDao;
 
     public List<Product> GetProducts(){
         var result = productDao.GetAll();
@@ -28,8 +28,8 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public Product GetProductById(Integer id) {
-        var result = productDao.GetById(id);
+    public Product FindProduct(FindProductRequest request) {
+        var result = productDao.FindProduct(request);
 
         return  result;
     }

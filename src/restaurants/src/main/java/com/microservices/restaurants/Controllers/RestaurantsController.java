@@ -77,7 +77,7 @@ public class RestaurantsController {
     }
 
     @PatchMapping
-    public ResponseEntity<String> PatchCustomer(@RequestBody Restaurant restaurant){
+    public ResponseEntity<String> PatchRestaurant(@RequestBody Restaurant restaurant){
 
         if(restaurant == null)
             return new ResponseEntity ("You have to pass a valid request", HttpStatus.BAD_REQUEST);

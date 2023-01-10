@@ -2,12 +2,17 @@ package com.microservices.products.DAOs;
 
 import com.microservices.products.Models.Category;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class CategoryDaoImpl implements CategoryDao{
-    private static final String HASH_KEY = "Category";
+
+    @Value("${redis.hashName.categories}")
+    private String HASH_KEY;
     @Autowired
     private RedisTemplate<String, Object> template;
     @Override
@@ -21,20 +26,20 @@ public class CategoryDaoImpl implements CategoryDao{
     }
 
     @Override
-    public Category Patch(Category product) {
+    public Category Patch(Category category) {
 
-        if(GetById(product.getId()) == null)
+        if(GetById(category.getId()) == null)
             return null;
 
-        template.opsForHash().put(HASH_KEY, product.getId().toString(), product);
+        template.opsForHash().put(HASH_KEY, category.getId().toString(), category);
 
-        return product;
+        return category;
     }
     @Override
-    public Category Save(Category prod) {
-        template.opsForHash().put(HASH_KEY, prod.getId().toString(), prod);
+    public Category Save(Category category) {
+        template.opsForHash().put(HASH_KEY, category.getId().toString(), category);
 
-        return prod;
+        return category;
     }
 
     @Override

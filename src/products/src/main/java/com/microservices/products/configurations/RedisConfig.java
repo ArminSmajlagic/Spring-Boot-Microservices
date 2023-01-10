@@ -1,6 +1,8 @@
 package com.microservices.products.configurations;
 
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
@@ -12,13 +14,19 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 @EnableRedisRepositories
+@Slf4j
 public class RedisConfig {
+
+    @Value("${redis.hostname}")
+    private String hostname;
+    @Value("${redis.port}")
+    private String port;
     @Bean
     public JedisConnectionFactory jedisConnectionFactory(){
-        RedisStandaloneConfiguration standaloneConfiguration = new RedisStandaloneConfiguration();
-        standaloneConfiguration.setHostName("localhost");
-        standaloneConfiguration.setPort(6379);
 
+        RedisStandaloneConfiguration standaloneConfiguration = new RedisStandaloneConfiguration();
+        standaloneConfiguration.setHostName(hostname);
+        standaloneConfiguration.setPort(Integer.parseInt(port));
         return new JedisConnectionFactory(standaloneConfiguration);
     }
 

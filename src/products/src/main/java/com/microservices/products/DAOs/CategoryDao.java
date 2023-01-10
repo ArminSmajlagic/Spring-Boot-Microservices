@@ -1,6 +1,7 @@
 package com.microservices.products.DAOs;
 
 import com.microservices.products.Models.Category;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
