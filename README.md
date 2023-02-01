@@ -12,25 +12,55 @@
 
 # Contents
 
-- Spring Boot
-- Microservice architecture
-- Swagger UI with OpenAPI
-- Spring Cloud Gateway 
-- Configuration Server with GitHub
-- Eureka Service Discovery
-- JPA with Hibernate & JDBC with Flyway migration
-- Grafana & Prometheus dashboard
-- PostgreSQL + Redis + MongoDB
-- Distributed tracing using Micrometer & Zipkin
-- System monitoring via Actuators
-- Aspects for logging and tracing
-- Dockerization of databases, services, servers, dashboards and more
-- Container orchestration with Kubernetes
-- Apache Kafka
+- Products service:
+  - Redis as priamry DB with Redis commander
+  - Apache kafka for publishing events
+  - Swagger UI with OpenAPI
+  
+- Orders service:
+  - PostgreSQL with PgAdmin
+  - Apache kafka for consuming events
+  - Swagger UI with OpenAPI
+  - JDBC with Flyway migration
+  - Aspects for logging and tracing
+  - Dockerization of dependencies
 
-- JWT Authentication & Authorization (coming soon!)
-- ELK Stack (coming soon!)
-- Jenkins CI/CD (coming soon!)
+- Restaurants service:
+  - MongoDB with MongoCompas
+  - Apache kafka for consuming events
+  - Swagger UI with OpenAPI
+  - Aspects for logging and tracing
+  - Dockerization of dependencies
+
+- Customers service:
+  - PostgreSQL with PgAdmin
+  - Swagger UI with OpenAPI
+  - JDBC with Flyway migration
+  - Aspects for logging and tracing
+  - Dockerization of dependencies
+
+- Delivery:
+    - MongoDB with MongoCompas
+    - Apache kafka for consuming events
+    - Swagger UI with OpenAPI
+    - Aspects for logging and tracing
+    - Dockerization of dependencies
+ 
+- Technologies shared among all services:
+  - Spring Boot
+  - Microservice architecture
+  - Spring Cloud Gateway 
+  - Configuration Server with GitHub
+  - Eureka Service Discovery
+  - Grafana & Prometheus dashboard
+  - Distributed tracing using Micrometer & Zipkin
+  - System monitoring via Actuators
+  - Dockerization of databases, services, servers, dashboards and more
+
+- Coming soon
+  - JWT Authentication & Authorization
+  - ELK Stack
+  - Jenkins CI/CD
 
 
 
