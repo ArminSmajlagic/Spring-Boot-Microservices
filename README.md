@@ -1,5 +1,11 @@
 # Spring Boot Microservices 
 
+<p align="center">
+	<img src="https://badgen.net/badge/API version/1.0/red">
+	<img src="https://badgen.net/badge/Spring Boot/3.0.1/cyan">
+	<img src="https://badgen.net/badge/icon/Docker?icon=docker&label">
+</p>
+
 <p style="font-size:5px;"> Spring Boot REST microservices for food and drinks ordering using displaying variety of technologies. Each service uses its own instance of database choosing from NoSql and SQL. Data access is being achived with JPA and JDBC using DAO & Reposiotry pattern with help of Flyway & hibernate to migrate schemas. Internal architecture of each service follows standard layered architecture.</p>
 
 <p style="font-size:5px;"> At the top level I use microservice architecture. Each service is layyered API with its own database, required packages for connection to DB, HTTP endpoints.</p>
@@ -63,6 +69,10 @@
   - ELK Stack
   - Jenkins CI/CD
 
-
+<p>
+ To run all required containers with Docker compose orchestration : 
+	
+	docker-compose up
+</p>
 
 Author: Armin Smajlagic
